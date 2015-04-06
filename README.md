@@ -1,4 +1,4 @@
-## Coursera: Getting and Cleaning Data
+# Coursera: Getting and Cleaning Data
 
-# Change History
+## Change History
 2015-04-06: Initalized new repository for beginning of course.
