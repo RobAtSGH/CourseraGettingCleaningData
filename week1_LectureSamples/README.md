@@ -6,11 +6,32 @@ downloading_data.R contains a wrapper getFile(url,destfile,dir=".",method="auto"
 
 ## File Download Collection
 
-### Fri Apr 10 10:16:59 2015
+### Fri Apr 10 10:40:50 2015
 
-CSV File of static speed cameras from OpenBaltimore data
+CSV File of static speed cameras from OpenBaltimore data  
 https://data.baltimorecity.gov/api/views/dz54-2aru
 
 ```
-getFile("https://data.baltimorecity.gov/api/views/dz54-2aru/rows.csv?accessType=DOWNLOAD","staticspeedcamera.csv",dir="./data/OpenBaltimore")
+getFile("https://data.baltimorecity.gov/api/views/dz54-2aru/rows.csv?accessType=DOWNLOAD","staticspeedcameras.csv",dir="./data/OpenBaltimore")
+```
+
+### Fri Apr 10 11:17:45 2015
+
+Excel format  
+```
+getFile("https://data.baltimorecity.gov/api/views/dz54-2aru/rows.xls?accessType=DOWNLOAD","staticspeedcameras.xls",dir="./data/OpenBaltimore")
+```
+
+### Fri Apr 10 10:50:26 2015
+
+XML  
+```
+getFile("https://data.baltimorecity.gov/api/views/dz54-2aru/rows.xml?accessType=DOWNLOAD","staticspeedcameras.xml",dir="./data/OpenBaltimore")
+```
+
+### Fri Apr 10 10:50:36 2015
+
+JSON  
+```
+getFile("https://data.baltimorecity.gov/api/views/dz54-2aru/rows.json?accessType=DOWNLOAD","staticspeedcameras.json",dir="./data/OpenBaltimore")
 ```
