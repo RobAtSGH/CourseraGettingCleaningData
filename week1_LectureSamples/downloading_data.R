@@ -24,3 +24,18 @@ readExcel <- function (..., index = 1) {
     library(xlsx)
     read.xlsx(..., sheetIndex = index)
 }
+
+# Parsing XML doesn't require a local file, but one can be passed in URL format.
+# Either way, the XML file is read from a locator via the xmlTreeParse function.
+# This wrapper pre-loads the XML library and returns a pointer to the parsed
+# file data.
+readXML <- function (...) {
+    library(XML)
+    xmlTreeParse(...)
+}
+
+# Same thing for JSON.
+readJSON <- function (...) {
+    library(jsonlite)
+    fromJSON(...)
+}
