@@ -3,7 +3,6 @@
 ## Tools
 
 downloading_data.R contains a wrapper getFile(url,destfile,dir=".",method="auto") that will check for the existence of dir and create it recursively if not. It provides for a clean download destination directory without worrying about creating it beforehand.
------
 
 ## File Download Collection
 
